@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -8,61 +7,19 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <style>
-    .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-
-    /* Modal Content/Box */
-    .modal-content {
-      background-color: #fefefe;
-      margin: 15% auto; /* 15% from the top and centered */
-      padding: 20px;
-      border: 1px solid #888;
-      width: 30%; /* Could be more or less, depending on screen size */
-    }
-    /*<object id="svg-object" data="path/to/external.svg" type="image/svg+xml"></object>*/
-    /*http://www.petercollingridge.co.uk/tutorials/svg/interactive/javascript/*/
   </style>
-  <script type="text/javascript">
-    function close_pop(flag) {
-      $('#myModal').hide();
-    };
-  </script>
-
 </head>
-
 <body>
 
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <p style="text-align: center;"><span style="font-size: 14pt;"><b><span style="font-size: 24pt;">하천 영상</span></b></span></p>
-      <p style="text-align: center; line-height: 1.5;"><br />
-        <iframe src="https://www.youtube.com/embed/BoCLdG2x594" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </p>
-      <p><br /></p>
-      <div style="cursor:pointer;background-color:#DDDDDD;text-align: center;padding-bottom: 10px;padding-top: 10px;" onClick="close_pop();">
-                  <span class="pop_bt" style="font-size: 13pt;" >
-                       닫기
-                  </span>
-      </div>
-    </div>
-  </div>
-
+<div style="text-align: center;">
   <?xml version="1.0" encoding="utf-8"?>
-  <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     width="841.89px" height="595.28px" viewBox="0 0 841.89 595.28" enable-background="new 0 0 841.89 595.28" xml:space="preserve">
+  <svg id="svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="1200.89px" height="800.28px" viewBox="0 0 841.89 595.28" enable-background="new 0 0 841.89 595.28" xml:space="preserve">
     <g>
       <rect x="107.543" y="67.783" fill="none" width="628.318" height="460.508"/>
       <path fill="#414042" d="M257.899,276.319c0,0-37.99-18.771-45.083-25.193s-19.009-17.895-20.428-21.096l-12.845,8.795
@@ -629,7 +586,7 @@
       <text transform="matrix(1 0 0 1 421.8413 418.5459)" font-family="'SeoulNamsanB'" font-size="7.3293">사당천</text>
       <text transform="matrix(1 0 0 1 440.7207 394.502)" font-family="'SeoulNamsanB'" font-size="7.3293">반포천</text>
       <text transform="matrix(1 0 0 1 494.3281 399.6797)" font-family="'SeoulNamsanB'" font-size="7.3293">
-        <a xlink:href="javascript:open_popup()"> 양재천 </a>
+        <a xlink:href="javascript:hide_svg()"> 양재천 </a>
       </text>
       <text transform="matrix(1 0 0 1 587.6504 394.8584)" font-family="'SeoulNamsanB'" font-size="7.3293">탄천</text>
       <text transform="matrix(1 0 0 1 650.7363 307.666)" font-family="'SeoulNamsanB'" font-size="7.3293">고덕천</text>
@@ -646,7 +603,9 @@
       <text transform="matrix(1 0 0 1 299.1841 270.4551)" font-family="'SeoulNamsanB'" font-size="7.3293">불광천</text>
       <text transform="matrix(1 0 0 1 151.3091 168.8496)" font-family="'SeoulNamsanB'" font-size="25.5486">서울하천지도</text>
       <text transform="matrix(1 0 0 1 422.582 240.8262)" font-family="'SeoulNamsanB'" font-size="7.3293">인왕천</text>
-      <text transform="matrix(1 0 0 1 456.8711 299.2773)" font-family="'SeoulNamsanB'" font-size="7.3293">청계천</text>
+      <text transform="matrix(1 0 0 1 456.8711 299.2773)" font-family="'SeoulNamsanB'" font-size="7.3293">
+        <a xlink:href="javascript:show_video('https://firebasestorage.googleapis.com/v0/b/timedeal-d9667.appspot.com/o/11.%20%E1%84%8E%E1%85%A5%E1%86%BC%E1%84%80%E1%85%A8%E1%84%8E%E1%85%A5%E1%86%AB.mp4?alt=media&token=1edc2ddb-3212-4d15-83be-9b08fbafdaab')"> 청계천 </a>
+      </text>
       <g>
         <g>
 
@@ -682,10 +641,39 @@
       </g>
     </G>
   </svg>
+</div>
+
+
+  <video id="video" controls autoplay hidden>
+    <source id="source" src="https://firebasestorage.googleapis.com/v0/b/timedeal-d9667.appspot.com/o/1.%20%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%A3%E1%86%BC%E1%84%8E%E1%85%A5%E1%86%AB.mp4?alt=media&token=99a1857a-7f21-4039-b182-16faedfec568" type="video/mp4">
+  </video>
+
   <script>
-    function open_popup(){
-      $('#myModal').show();
+
+    var video = document.querySelector("#video");
+    video.addEventListener("ended",hide_video,false);
+
+
+    function hide_svg() {
+      $("#svg").hide();
     }
+
+    function show_video(video_src){
+      // 'http://www.w3schools.com/html/mov_bbb.mp4';
+      hide_svg();
+      $("#video").show();
+      document.getElementById('source').src = video_src;
+      document.getElementById('video').load();
+      video.webkitRequestFullScreen();
+    }
+
+    function hide_video(){
+      $("#video").hide();
+      $("#svg").show();
+    }
+
+
+
   </script>
 
 </body>
