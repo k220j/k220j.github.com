@@ -1,0 +1,24 @@
+{
+  "name": "k220j.github.com",
+  "version": "1.0.0",
+  "description": "personal blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nuxt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k220j/k220j.github.com.git"
+  },
+  "author": "hodongs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k220j/k220j.github.com/issues"
+  },
+  "homepage": "https://github.com/k220j/k220j.github.com#readme",
+  "dependencies": {
+    "nuxt": "2.4.5",
+    "font-awesome": "4.7.0"
+  }
+}
