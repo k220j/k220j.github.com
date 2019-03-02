@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nuxt"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=master --cleanup"
   },
   "repository": {
     "type": "git",
@@ -20,5 +24,8 @@
   "dependencies": {
     "nuxt": "2.4.5",
     "font-awesome": "4.7.0"
+  },
+  "devDependencies": {
+    "push-dir": "^0.4.1"
   }
 }
